@@ -1,0 +1,248 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0f172a; /* warna gelap */
+    color: #e5e7eb;           /* warna teks terang */
+}
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: Courier;
+    color: #C40C0C;
+
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    top: 0;
+    background: #FFFFFF;
+    z-index: 100;
+    border-bottom: 1px solid #C40C0C;
+}
+
+nav ul {
+    list-style-type: none ;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: blue;
+
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #C40C0C;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: dodgerblue;
+    width: 100%;
+    line-height: 50px;
+}
+
+p{
+    font-family: 'comic sans ms';
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: dodgerblue;  
+}
+
+a.tbl-biru {
+    background: #BBE0EF;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px 25px 20px 25px;
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: bold   ;
+}   
+
+a.tbl-biru:hover {
+    background: #c7400b;
+    text-decoration:none;
+}
+
+a.tbl-pink {
+    background: #c6bbef;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px 25px 20px 25px;
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: bold   ;
+}
+
+a.tbl-pink:hover {
+    background: #c5efbb;
+    text-decoration:none;
+}
+
+p{
+    margin: 20px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
+
+}
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.Nama-Anggota {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-Anggota {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-Anggota img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.kartu-Anggota p {
+    font-family: 'comic sans ms';
+    font-size: 800;
+    font-size: 25px;
+    text-align:center;
+    color: #C40C0C;
+}
+
+.biodata-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.kartu-biodata {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.kartu-biodata:hover {
+    transform: translateY(-5px);
+}
+
+.kartu-biodata h3 {
+    color: #C40C0C;
+    margin-bottom: 10px;
+}
+
+.kartu-biodata p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #333;
+}
+
+#habibi, #bagas, #eko {
+    scroll-margin-top: 90px;
+}
+
+#perkenalan {
+    min-height: 100vh;
+    padding: 100px 50px;
+    scroll-margin-top: 90px;
+}
+
+.video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.kartu-video {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.kartu-video h3 {
+    color: #C40C0C;
+    margin-bottom: 15px;
+}
+
+.kartu-video video {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+#music-btn {
+    padding: 10px 15px;
+    background: #C40C0C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}

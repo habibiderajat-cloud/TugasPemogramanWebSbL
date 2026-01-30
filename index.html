@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KELOMPOK 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>HBE</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#anggota">Anggota</a></li>
+                    <li><a href="#biodata">Biodata</a></li>
+                    <li><a href="#perkenalan">Perkenalan</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href=""class="tbl-biru">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <div class="wrapper">
+            <section id="home">
+                <img src="Gambar/HBE..png" />
+                <div class="kolom">
+                    <p class="deskripsi">Tugas Pemrograman Kelompok 2 </p>
+                    <h2>Semoga Semeter ini menjadi Semeter sesuai dengan di harapkan</h2>
+                    <p>Tetap Semangat</p>
+                    <p><a href="" class="tbl-pink">Menu Lain</a></p>
+                </div>
+            </section>
+
+            <section id="anggota">
+                <div class="tengah">
+                    <div class="kolom">
+                        <p class="deskripsi">Kelompok 2</p>
+                        <h2>Anggota</h2>
+                    </div>
+
+                    <div class="Nama-Anggota">
+                        <div class="kartu-Anggota">
+                            <img src="Gambar/Habibii.jpg"/>
+                            <p>Habibi</p>
+                        </div>
+                        <div class="kartu-Anggota">
+                            <img src="Gambar/Bagas.jpg"/>
+                            <p>Bagas</p>
+                        </div>
+                        <div class="kartu-Anggota">
+                            <img src="Gambar/Eko.jpeg"/>
+                            <p>Eko</p>
+                        </div>
+                    </div>   
+                </div>
+            </section>
+            <section id="biodata">
+                <div class="tengah">
+                    <div class="kolom">
+                        <p class="deskripsi">Data biodata</p>
+                        <h2>biodata</h2>
+                        <p>dokumen atau kumpulan data yang memuat informasi ringkas tentang identitas diri seseorang</p>
+                    </div>
+                    <div class="biodata-list">
+                        <div class="kartu-biodata" id="habibi">
+        <h3>Habibi</h3>
+        <p>
+            Derajat Habibi adalah mahasiswa Program Studi Sistem Informasi 
+            di Universitas Cyber Asia. Berjenis kelamin laki-laki dengan 
+            NIM 230101010104. Memiliki ketertarikan pada pengembangan teknologi 
+            informasi, pengelolaan sistem, dan inovasi digital.
+        </p>
+    </div>
+
+    <div class="kartu-biodata" id="bagas">
+        <h3>Bagas</h3>
+        <p>
+            Dimas Bagas Pandya Ath-Thariq merupakan mahasiswa Program Studi 
+            Sistem Informasi di Universitas Cyber Asia dengan NIM 230101010091. 
+            Fokus pada pengembangan sistem dan solusi digital.
+        </p>
+    </div>
+
+    <div class="kartu-biodata" id="eko">
+        <h3>Eko</h3>
+        <p>
+            Eko Budiono Wicaksono adalah mahasiswa Program Studi Sistem Informasi 
+            di Universitas Cyber Asia dengan NIM 230101010090. Memiliki minat 
+            pada pengolahan data dan teknologi informasi.
+        </p>
+    </div>
+</div>
+                </div>
+            </section>
+
+            <section id="perkenalan">
+    <div class="tengah">
+        <div class="kolom">
+            <p class="deskripsi">Video Perkenalan</p>
+            <h2>Perkenalan Anggota</h2>
+            <p>Video perkenalan masing-masing anggota kelompok.</p>
+        </div>
+
+        <div class="video-list">
+
+            <div class="kartu-video" id="video-habibi">
+                <h3>Habibi</h3>
+                <video controls>
+                    <source src="Video/WhatsApp Video 2026-01-30 at 11.38.28.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="kartu-video" id="video-bagas">
+                <h3>Bagas</h3>
+                <video controls>
+                    <source src="Video/WhatsApp Video 2026-01-28 at 16.45.28.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="kartu-video" id="video-eko">
+                <h3>Eko</h3>
+                <video controls>
+                    <source src="Video/Video Perkenalan Eko.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+            <section id="perkenalan">
+    <div class="tengah">
+
+        <div class="music-player">
+            <audio id="bg-music" autoplay loop>
+                <source src="Audio/Alex Moretto - All Night Long [NCS Release].mp3" type="audio/mpeg">
+                Browser tidak mendukung audio
+            </audio>
+
+            <button id="music-btn">🎵 Aktifkan Musik</button>
+        </div>
+
+    </div>
+</section>
+        </div>
+        <script>
+  const music = document.getElementById('bg-music');
+  const btn = document.getElementById('music-btn');
+
+  btn.addEventListener('click', function() {
+    if (music.paused) {
+      music.play();
+      btn.innerHTML = "⏸ Matikan Musik";
+    } else {
+      music.pause();
+      btn.innerHTML = "🎵 Aktifkan Musik";
+    }
+  });
+</script>
+</body>
+</html>
